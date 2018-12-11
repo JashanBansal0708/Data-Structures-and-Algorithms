@@ -1,0 +1,25 @@
+{
+  "name": "Data-Structures-and-Algorithms",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms practice code files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JashanBansal0708/Data-Structures-and-Algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JashanBansal0708/Data-Structures-and-Algorithms/issues"
+  },
+  "homepage": "https://github.com/JashanBansal0708/Data-Structures-and-Algorithms#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
