@@ -130,5 +130,35 @@ export default class LinkedList{
         previousNode.next = null 
         console.log(deletedNode.value)
         return deletedNode
-    } 
+    }
+    
+    reverse(){
+        if(this.head != this.tail){
+
+            let currentNode = this.head
+            let nextNode = this.head.next
+            let previousNode = null
+            while(currentNode.next){
+                currentNode.next = previousNode
+                previousNode = currentNode
+                currentNode = nextNode
+                nextNode = nextNode.next
+            }
+            currentNode.next = previousNode
+            this.head = currentNode
+        }
+    }
+    fromArray(array){
+        array.forEach(value => this.append(value))
+    }
+
+    toArray(){
+        let array= []
+        let currentNode = this.head 
+        while(currentNode){
+            array.push(currentNode.value)
+            currentNode = currentNode.next
+        }
+        return array
+    }
 }
