@@ -16,15 +16,15 @@ class SumOfDigitsPalindrome {
                 digitsSum = digitsSum + number % 10;
                 number = number / 10;
             }              
-            System.out.println(digitsSum);  
+            // System.out.println(digitsSum);  
 
             int reverse = 0;
             int copy = digitsSum;
             for(int j = 0; copy > 0 ; j++){
-                reverse = (10 * j)*(copy % 10);
+                reverse = (10 * reverse) + (copy % 10);
                 copy = copy/10;
             }
-            System.out.println(reverse);  
+            // System.out.println(reverse);  
 
 
             if(reverse == digitsSum){
