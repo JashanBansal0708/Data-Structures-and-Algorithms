@@ -21,6 +21,7 @@ class SeriesGP2{
                 result[i] = (int)Math.floor(first * Math.pow((double)second/first, n-1));
             }
         }
+        scan.close();
         for(int i=0; i< testCases; i++){
             System.out.println(result[i]);
         }

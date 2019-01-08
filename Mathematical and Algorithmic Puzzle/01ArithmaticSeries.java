@@ -16,6 +16,7 @@ class ArithmaticSeries{
             int diff = second-first;            
             result[i] = first + (nth - 1) * diff;
         }
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(result[i]);
         }

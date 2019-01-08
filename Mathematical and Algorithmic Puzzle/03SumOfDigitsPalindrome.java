@@ -12,15 +12,15 @@ class SumOfDigitsPalindrome {
         for(int i=0; i<testCases; i++){
             int number = scan.nextInt();
             int digitsSum = 0;
-            for(int j = 0; number > 0; j++){
+            while(number > 0){
                 digitsSum = digitsSum + number % 10;
                 number = number / 10;
-            }              
+            }           
             // System.out.println(digitsSum);  
 
             int reverse = 0;
             int copy = digitsSum;
-            for(int j = 0; copy > 0 ; j++){
+            while(copy > 0){
                 reverse = (10 * reverse) + (copy % 10);
                 copy = copy/10;
             }
@@ -34,6 +34,7 @@ class SumOfDigitsPalindrome {
                 result[i] = "NO";
             }
         }
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(result[i]);
         }

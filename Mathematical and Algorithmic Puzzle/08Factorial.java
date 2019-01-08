@@ -20,6 +20,7 @@ class Factorial{
             int n = scan.nextInt();
             result[i] = factorial(n);
         }
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(String.format("%.0f", result[i]));
         }

@@ -21,6 +21,7 @@ class Permutation {
             int r = scan.nextInt();
             result[i] = factorial(n)/factorial(n-r);
         }
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(String.format("%.0f", result[i]));
         }

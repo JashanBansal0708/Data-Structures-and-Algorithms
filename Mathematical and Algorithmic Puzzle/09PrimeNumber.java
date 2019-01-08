@@ -22,6 +22,7 @@ class PrimeNumber{
             int number = scan.nextInt();
             result[i] = prime(number); 
         }   
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(result[i]);
         }

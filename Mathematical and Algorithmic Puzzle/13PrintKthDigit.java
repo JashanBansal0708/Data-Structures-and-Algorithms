@@ -19,6 +19,7 @@ class PrintKthDigit{
             }
             result[i] = (int)kth;
         }
+        scan.close();
         for(int i = 0; i< testCases; i++){
             System.out.println(result[i]);
         }

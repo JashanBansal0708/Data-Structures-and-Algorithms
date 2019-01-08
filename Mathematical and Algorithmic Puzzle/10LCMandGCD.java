@@ -26,6 +26,7 @@ class LCMandGCD {
             int lcm = number1*number2/gcd;
              result[i] = String.valueOf(lcm) + " " + String.valueOf(gcd); 
         }
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(result[i]);
         }

@@ -15,7 +15,8 @@ class FractionAddition
 			GfG g = new GfG();
 			g.addFraction(a,b,c,d);
 		T--;
-		}
+        }
+        sc.close();
 	}
 }
 

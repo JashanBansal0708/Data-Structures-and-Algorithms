@@ -15,6 +15,7 @@ class SeriesGP{
             // Precision plays important role here
             result[i] = (int)Math.floor(nth);
         }
+        scan.close();
         for(int i=0; i< testCases; i++){
             System.out.println(result[i]);
         }

@@ -25,6 +25,7 @@ class ArmStrong {
                 result[i] = "No";
             }
         }
+        scan.close();
         for(int i=0; i<testCases; i++){
             System.out.println(result[i]);
         }
