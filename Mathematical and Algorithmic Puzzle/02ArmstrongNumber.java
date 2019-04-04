@@ -1,33 +1,39 @@
-/*package whatever //do not write package name here */
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class ArmStrong {
+class Armstrong {
+    private static String isArmstrong(int num){
+        int copy = num;
+        int sum = 0;
+        while(copy!=0){
+            int digit = copy % 10;
+            sum += (int)Math.pow(digit,3);
+            copy = copy / 10;
+        }
+        return sum == num? "YES": "NO";
+    }
 	public static void main (String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int testCases = scan.nextInt();
-		String result[] = new String[testCases];
-        for(int i=0; i<testCases; i++){
-            int number = scan.nextInt();
-            int copy = number;
-            int firstDigit = copy%10;
-            copy = copy/10;
-            int secondDigit = copy%10;
-            copy = copy/10;
-            int thirdDigit = copy%10;
-            double power3Sum= Math.pow(firstDigit,3) + Math.pow(secondDigit,3) + Math.pow(thirdDigit,3); 
-            if(power3Sum == number){
-                result[i] = "Yes";
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Enter number of Test Cases");
+            int t = Integer.parseInt(br.readLine());
+            // String result[] = new String[t]; 
+            String result = ""; 
+
+            for(int i=0; i< t; i++) {
+                int num = Integer.parseInt(br.readLine());
+                result += isArmstrong(num) + '\n';
             }
-            else{
-                result[i] = "No";
-            }
+            System.out.println(result);
+
+            // for(String str: result){
+            //     System.out.println(str);
+            // }
         }
-        scan.close();
-        for(int i=0; i<testCases; i++){
-            System.out.println(result[i]);
+        catch(IOException ex){
+            System.out.println("Fail!");
         }
-	}
+        
+    }
 }

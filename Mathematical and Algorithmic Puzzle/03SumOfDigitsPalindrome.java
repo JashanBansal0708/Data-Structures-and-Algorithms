@@ -1,10 +1,8 @@
-/*package whatever //do not write package name here */
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class SumOfDigitsPalindrome {
+class SumOfDigitsIsPalindrome {
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);
         int testCases = scan.nextInt();
