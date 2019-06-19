@@ -26,14 +26,9 @@ class Armstrong {
                 result += isArmstrong(num) + '\n';
             }
             System.out.println(result);
-
-            // for(String str: result){
-            //     System.out.println(str);
-            // }
         }
         catch(IOException ex){
             System.out.println("Fail!");
         }
-        
     }
 }
